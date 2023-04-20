@@ -77,7 +77,7 @@
         "country_capital": "Sarajevo",
         "country_continent": "Europe",
         "currency_code": "BAM",
-        "currency_name": "Bosnia-Herzegovina Convertible Mark"
+        "currency_name": "Bosnia Convertible Mark"
     },
     {
         "country_name": "Barbados",
@@ -586,7 +586,7 @@
     {
         "country_name": "Sri Lanka",
         "country_code": "lk",
-        "country_capital": "Sri Jayawardenepura Kotte, Colombo",
+        "country_capital": "Sri Jayawardenepura",
         "country_continent": "Asia",
         "currency_code": "LKR",
         "currency_name": "Sri Lankan rupee"
@@ -910,7 +910,7 @@
         "currency_name": "Singapore dollar"
     },
     {
-        "country_name": "Saint Helena, Ascension and Tristan da Cunha",
+        "country_name": "Saint Helena, Ascension and Tristan",
         "country_code": "sh",
         "country_capital": "Jamestown",
         "country_continent": "Africa",
@@ -947,7 +947,7 @@
         "country_capital": "São Tomé",
         "country_continent": "Africa",
         "currency_code": "STD",
-        "currency_name": "São Tomé and Príncipe Dobra (pre-2018)"
+        "currency_name": "São Tomé and Príncipe Dobra"
     },
     {
         "country_name": "El Salvador",
