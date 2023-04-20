@@ -1,37 +1,42 @@
-/* eslint-disable */
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import Main from './pages/index';
 import SingleCurrency from './pages/singleCurrency';
-import { SetUsdCountries, getUsdCurrencies } from './redux/currencies/currenciesSlice';
-import currenciesAndCountries from './utility/currencyAndCountry.json'
+import {
+  SetUsdCountries,
+  getUsdCurrencies,
+} from './redux/currencies/currenciesSlice';
+import currenciesAndCountries from './utility/currencyAndCountry.json';
 
 function App() {
   const dispatch = useDispatch();
-  const { usdCurrencies } = useSelector((state)=> state.currencies )
+  const { usdCurrencies } = useSelector((state) => state.currencies);
 
   useEffect(() => {
     dispatch(getUsdCurrencies());
   }, [dispatch]);
 
   useEffect(() => {
-    if(usdCurrencies){
-      let temp = []
-      const code = usdCurrencies.usd
-      for(let key in code){
-        key = key.toUpperCase()
-        const country = currenciesAndCountries.find((element)=> element.currency_code === key)
-        if(country){
-          key = key.toLowerCase()
-          temp.push({
+    if (usdCurrencies) {
+      const temp = [];
+      const code = usdCurrencies.usd;
+      if (code) {
+        Object.keys(code).forEach((key) => {
+          const upperKey = key.toUpperCase();
+          const country = currenciesAndCountries.find(
+            (element) => element.currency_code === upperKey,
+          );
+          if (country) {
+            temp.push({
               ...country,
-              currency_value: code[key]
-          })
-        }
+              currency_value: code[key],
+            });
+          }
+        });
       }
-      dispatch(SetUsdCountries(temp))
+      dispatch(SetUsdCountries(temp));
     }
   }, [usdCurrencies]);
 

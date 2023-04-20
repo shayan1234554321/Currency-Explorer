@@ -1,24 +1,23 @@
-/* eslint-disable */
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
-import { currencyAPI } from '../../utility/secret';
+import currencyAPI from '../../utility/secret';
 
 const initialState = {
   currencies: [],
   usdCountries: [],
   usdCurrencies: [],
   loading: false,
-  currentCurrency: null
+  currentCurrency: null,
 };
 
 export const getCurrencies = createAsyncThunk('Get Currencies', async (currencyCode) => {
-  const API = currencyAPI(currencyCode)
+  const API = currencyAPI(currencyCode);
   const response = await axios.get(API);
   return response.data;
 });
 
 export const getUsdCurrencies = createAsyncThunk('Get USD Currencies', async () => {
-  const API = currencyAPI("usd")
+  const API = currencyAPI('usd');
   const response = await axios.get(API);
   return response.data;
 });
@@ -27,12 +26,8 @@ export const counterSlice = createSlice({
   name: 'currencies',
   initialState,
   reducers: {
-    SetCurrentCurrency: (state, { payload }) => {
-      return { ...state, currentCurrency: payload };
-    },
-    SetUsdCountries: (state, { payload }) => {
-      return { ...state, usdCountries: payload };
-    },
+    SetCurrentCurrency: (state, { payload }) => ({ ...state, currentCurrency: payload }),
+    SetUsdCountries: (state, { payload }) => ({ ...state, usdCountries: payload }),
   },
   extraReducers: (builder) => {
     builder.addCase(getCurrencies.pending, (state) => ({
@@ -56,6 +51,6 @@ export const counterSlice = createSlice({
   },
 });
 
-export const { SetCurrentCurrency , SetUsdCountries } = counterSlice.actions;
+export const { SetCurrentCurrency, SetUsdCountries } = counterSlice.actions;
 
 export default counterSlice.reducer;
