@@ -137,7 +137,7 @@ npm start
 
 ### Run tests
 
-To run Stylelint and ESLint tests, run the following commands respectively:
+To run Stylelint , Jest and ESLint tests, run the following commands respectively:
 
 ```
 npm run: npx eslint "**/*.{js,jsx}"
@@ -145,6 +145,10 @@ npm run: npx eslint "**/*.{js,jsx}"
 
 ```
 npx stylelint "**/*.{css,scss}"
+```
+
+```
+npx run test
 ```
 
 ### Deployment
@@ -212,6 +216,4 @@ This project is [MIT](./LICENSE) licensed.
 
 ## Remaining
 - [] Jest testing
-- [] Handle Desktop version
 - [] Deploy project
-- [] Record project
