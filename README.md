@@ -76,7 +76,11 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-<a href="">Not live yet</a>
+<a href="https://currency-explorer.onrender.com/">Live</a>
+
+## 🚀 Detailed Video Link <a name="live-demo"></a>
+
+<a href="https://www.loom.com/share/16624001071d40268f2cf65a67d6d567">Watch Loom Video</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -213,7 +217,3 @@ I would like to thank Microverse and Youtube for their help
 This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## Remaining
-- [] Jest testing
-- [] Deploy project
