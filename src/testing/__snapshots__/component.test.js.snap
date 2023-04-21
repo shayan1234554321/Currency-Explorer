@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders without crashing CountryItem to Match Snapshot 1`] = `null`;
+
+exports[`Renders without crashing SingleCountryItem to Match Snapshot 1`] = `null`;

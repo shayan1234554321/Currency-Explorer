@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders without crashing Main renders without crashing 1`] = `
+<div
+  className="container"
+>
+  <nav>
+    <div
+      className="left"
+    />
+    <h4>
+      Base Currency: USD
+    </h4>
+    <div
+      className="iconsContainer"
+    >
+      <img
+        alt="mic"
+        className="icon"
+        src="mic.svg"
+      />
+      <img
+        alt="setting"
+        className="icon"
+        src="setting.svg"
+      />
+    </div>
+  </nav>
+  <div
+    className="topItem"
+  >
+    <div
+      className="flagImageContainer"
+    >
+      <div
+        className="flagImage"
+      >
+        <img
+          alt="flag"
+        />
+      </div>
+    </div>
+    <div
+      className="details"
+    >
+      <h2>
+         
+         
+      </h2>
+      <h4 />
+      <h4 />
+    </div>
+  </div>
+  <div
+    className="countryItemsHeader"
+  >
+    Exchange To Other Countries Currency
+  </div>
+  <div
+    className="countriesContainer"
+  />
+</div>
+`;
+
+exports[`Renders without crashing SingleCurrency renders without crashing 1`] = `null`;
