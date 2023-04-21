@@ -9,6 +9,7 @@ import {
   getUsdCurrencies,
 } from './redux/currencies/currenciesSlice';
 import currenciesAndCountries from './utility/currencyAndCountry.json';
+import HandleDesktop from './components/handleDesktop';
 
 function App() {
   const dispatch = useDispatch();
@@ -42,10 +43,12 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" exact element={<Main />} />
-        <Route path="/currency" exact element={<SingleCurrency />} />
-      </Routes>
+      <HandleDesktop>
+        <Routes>
+          <Route path="/" exact element={<Main />} />
+          <Route path="/currency" exact element={<SingleCurrency />} />
+        </Routes>
+      </HandleDesktop>
     </BrowserRouter>
   );
 }

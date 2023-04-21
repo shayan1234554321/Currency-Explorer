@@ -209,3 +209,9 @@ I would like to thank Microverse and Youtube for their help
 This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Remaining
+- [] Jest testing
+- [] Handle Desktop version
+- [] Deploy project
+- [] Record project
