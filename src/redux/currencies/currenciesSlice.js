@@ -1,5 +1,4 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import axios from 'axios';
 import currencyAPI from '../../utility/secret';
 
 const initialState = {
@@ -12,14 +11,16 @@ const initialState = {
 
 export const getCurrencies = createAsyncThunk('Get Currencies', async (currencyCode) => {
   const API = currencyAPI(currencyCode);
-  const response = await axios.get(API);
-  return response.data;
+  const response = await fetch(API);
+  const data = await response.json();
+  return data;
 });
 
 export const getUsdCurrencies = createAsyncThunk('Get USD Currencies', async () => {
   const API = currencyAPI('usd');
-  const response = await axios.get(API);
-  return response.data;
+  const response = await fetch(API);
+  const data = await response.json();
+  return data;
 });
 
 export const counterSlice = createSlice({
