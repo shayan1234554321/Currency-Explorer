@@ -38,6 +38,7 @@
 - React
 - React router
 - Redux
+- External API
 
 ### Tech Stack <a name="tech-stack"></a>
 
