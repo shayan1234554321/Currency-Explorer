@@ -207,7 +207,9 @@ If you like this project please leave a ⭐️
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse and Youtube for their help
+Original design idea by [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio) the [author of the original design].
+
+I would like to thank Microverse for helping us in the journey to become a Fullstack developer 🌹
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
